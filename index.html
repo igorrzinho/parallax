@@ -1,56 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>parallax</title>
+    <link rel="stylesheet" href="style.css">
+    <title>semaforo</title>
+
 </head>
 
 <body>
-    <div class="">
-        <h1>as 5 maiores cidades do brasil</h1>
-        <p>Segundo a última projeção em tempo real do IBGE, o Brasil tem hoje pouco mais de 211 milhões de habitantes.</p>
-        <p>A lista de municípios mais populosos do Brasil está em ordem de acordo com o número de habitantes do município principal. Se for enumerar por regiões metropolitanas, a ordem seria um pouco diferente.</p>
+    <div class="off" id="semaforo">
+    </div>
+    <div class="mAuto">
+        <div class="btoff"><button onclick="off()">desligado</button></div>
+        <div class="btyellow"><button onclick="change(3)">laranja</button></div>
+        <div class="btred"><button onclick="change(2)">vermelho</button></div>
+        <div class="btgreen"><button onclick="change(1)">verde</button></div>
+    </div>  
+      
+    <script>
+        var obj = document.getElementById('semaforo');
+        function off() {
+            obj.setAttribute("class", "off")
 
-    </div>
-    <div class="sp"></div>
-    <div class="branco">
-        <h2>São Paulo</h2>
-        <p>Além de ser a maior cidade do Brasil, São Paulo é também a cidade mais populosa da América do Sul e de todo o hemisfério sul, estando em 8º lugar entre as maiores cidades do mundo. Somente o município de São Paulo possui mais de 12 milhões de
-            moradores. Já a grande São Paulo, cuja região metropolitana inclui cidades Guarulhos, Osasco e o ABC Paulista, possui mais de 20 milhões de habitantes.</p>
-    </div>
-    <div class="rio"></div>
+        }
+        function change(c) {
+            if (c == 1) {
+                obj.setAttribute("class", "green")
+            } else if (c == 2) {
+                obj.setAttribute("class", "red")
+            } else if (c == 3) {
+                obj.setAttribute("class", "yellow")
+            }
+        }
 
-    <div class="branco">
-        <h2>Rio De Janeiro</h2>
-        <p>A Cidade Maravilhosa está perto de chegar a 7 milhões de habitantes. Com tamanha população, o Rio de Janeiro é a segunda maior cidade do Brasil e a quarta mais populosa do continente, atrás apenas de São Paulo, Bogotá e Lima. A região metropolitana
-            da capital, a Grande Rio, tem hoje pouco mais de 13 milhões de habitantes.</p>
-    </div>
-    <div class="brasilia"></div>
-    <div class="branco">
-        <h2>Brasilia</h2>
-        <p>No último censo nacional, realizado em 2010, o Distrito Federal tinha 2,5 milhões de habitantes. Esse número cresceu bastante nos últimos 10 anos, como aponta a última projeção do IBGE. Mas cabe dizer que essa é a população do Distrito Federal,
-            considerando também cidades-satélite, como Ceilândia, Samambaia e Taguatinga. Se pegar apenas a população de Brasília de fato, ou seja, do Plano Piloto, são aproximadamente 220 mil habitantes.</p>
-    </div>
-    <div class="salvador"></div>
-    <div class="branco">
-        <h2>Salvador</h2>
-        <p>Primeira capital do país, a cidade de Salvador segue firme entre as maiores cidades do Brasil. Segundo a última projeção populacional, hoje são exatamente 2.872.347 milhões de habitantes em Salvador. Segundo estimativa de 2016, na Grande Salvador
-            residem 3,9 milhões de pessoas.</p>
-    </div>
-    <div class="fortaleza"></div>
-    <div class="fortalezaSemIMG">
-        <h2>Fortaleza</h2>
-        <p>A capital do Ceará tem hoje, segundo estimativas do IBGE, 2.669 milhões de habitantes. Já a região metropolitana de Fortaleza, com aproximadamente 3 milhões de habitantes, é maior do que a de Salvador e equivalente à população do Distrito Federal.</p>
-    </div>
-    <footer>
-        <p>desenvolvido por <a href="https://github.com/igorrzinho">Igor De Jesus Silva</a></p>
-         <p>fonte : <a href="https://www.buenasdicas.com/maiores-cidade-do-brasil-20-mais-populosas-11308/">buenas dicas</a></p>
-    <p> imagens retiradas de <a href="https://unsplash.com/">unsplash</a></p>
-    </footer>
+    </script>
 </body>
+
 
 </html>

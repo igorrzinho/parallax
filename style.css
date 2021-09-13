@@ -1,0 +1,72 @@
+body{
+ background-color: #012136;
+}
+
+#semaforo {
+            width:95%;
+            height: 500px;
+            margin: auto;
+        }
+.mAuto{
+    display: flex;
+}        
+
+.off {
+            background-image: url("img/off.png");
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+
+.yellow {
+            background-image: url("img/orange.png");
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+
+.red {
+            background-image: url("img/red.png");
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+
+.green {
+            background-image: url("img/green.png");
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+/*botoes*/
+button{
+    width: 80px;
+    height: 40px;
+    margin: 0rem 1rem;
+    border-radius: 5px;
+}
+.btyellow button{
+    background-color: rgb(255, 118, 64);
+    border: 3px solid rgb(255, 72, 0);
+    font-weight: bold;
+}
+
+.btred button{
+background-color: rgb(255, 46, 46);
+border: 3px solid red;
+font-weight: bold;
+}
+
+.btgreen button{
+background-color: rgb(46, 255, 46);
+border: 3px solid green;
+font-weight: bold;
+}
+
+.btoff button{
+background-color: rgb(46, 46, 46);
+border: 3px solid black;
+font-weight: bold;
+color: white;
+}
+@media only screen and (max-width: 800px){
+   .mAuto{
+     display: block;
+   } 
+}
