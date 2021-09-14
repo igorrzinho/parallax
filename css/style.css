@@ -2,7 +2,7 @@
 
 :root {
     --azulClaro: #a3cef1;
-    --azulMedio: #6096ba;
+    --azulMedio: #39637F;
     --azulEscuro: #14283e;
     --cinza: #e7ecef;
     --preto: black;
@@ -30,8 +30,6 @@ a:hover {
 
 body {
     background-color: var(--cinza);
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 footer {
