@@ -21,12 +21,13 @@ h1 {
     font-size: 3rem;
     color: var(--azulEscuro);
     text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
-h2 {
-    font-size: 2rem;
-    color: var(--azulEscuro);
-    text-align: center;
+.main-title {
+    padding-top: 400px;
+    text-shadow: 5px 5px 20px var(--azulClaro);
 }
 
 p {
@@ -109,4 +110,9 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+@media screen and (max-width:600px){
+    p{
+        width: 70%;
+    }
 }
